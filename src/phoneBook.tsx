@@ -32,7 +32,7 @@ const PhoneBook = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setFormData({ id: Date.now(), name: "", email: "", phone: "" });
+    setFormData({ name: "", email: "", phone: "" });
     setRefresh(!refresh);
 
     localStorage.setItem("contacts", JSON.stringify([...contacts, formData]));
